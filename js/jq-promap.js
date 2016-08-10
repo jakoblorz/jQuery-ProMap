@@ -134,6 +134,6 @@ $.fn.imgmap = function(){
                     }
                 });
             });
-        });
+        }).trigger('resize');
     });   
 }
