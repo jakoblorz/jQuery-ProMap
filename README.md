@@ -2,28 +2,28 @@
 A simple jQuery Plugin for Imagemaps that can be styled with css.
 Always thought why CSS doesn't support designing ImageMaps? You need a workaround? Here it is!
 
-# Features
+## Features
 <ul>
   <li>CSS designable - customize the areas, even hovering!</li>
   <li>fast and responsive - scales always according to the base Image!</li>
   <li>jQuery plugin - just one function call!</li>
 </ul>
 
-# Usage
-Add an Image to your html file (the following attributes are required):
+## Usage
+###Add an Image to your html file (the following attributes are required):
 ```
   <img id="" src="" usemap="#" width="" height="">
 ```
 > Notice: width and height are required for correct(responsive) scaling. These values should represent the real size of the Image. Modifying the size of the Image should be done by applying CSS to the Image (e.g. width:100%; height:auto;)
 
-Add a Map to your html file:
+###Add a Map to your html file:
 ```
   <map name="">
   </map
 ```
 > Notice: the name attribute should be the usemap attribute of your image (without the first #)
 
-Add some noteworthy areas to your map:
+###Add some noteworthy areas to your map:
 ```
   <map name="">
     <area shape="poly" coords="12,45,56,34,67,78,45,34" href="" content="">
@@ -38,17 +38,17 @@ But they are both optional.
 
 > Notice: jQuery-ProMap currently only supports polygones.<br>
 
-Import jQuery, adobe snap.svg and jq-promap.js
+###Import jQuery, adobe snap.svg and jq-promap.js
 I don't think you need help with that ;)
 
-Finally, call jp-promap.js on the documentbody:
+###Finally, call jp-promap.js on the documentbody:
 ```
   <script>
     $(document.body).promap();
   </script
 ```
 
-Your code should look slightly like this:
+###Your code should look slightly like this:
 ```
 <body>
   <img id="nicepic" src="img/nicepic.jpg" usemap="#highlights" width="1500" height="350">
