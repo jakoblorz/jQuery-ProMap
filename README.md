@@ -48,7 +48,7 @@ I don't think you need help with that ;)
   </script
 ```
 
-###Your code should look slightly like this:
+###Your code should now look slightly like this:
 ```
 <body>
   <img id="nicepic" src="img/nicepic.jpg" usemap="#highlights" width="1500" height="350">
