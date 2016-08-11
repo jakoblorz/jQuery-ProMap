@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="4r77y">
+    <title>jQuery-ProMap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<!--Setting strings corectly-->
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-inner">
+                <a class="navbar-brand" href="#">jQuery-ProMap</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li class="active"><a href="index.html">Editor</a></li>
+                    <li><a href="sample.html">Sample</a></li>
+                    <li><a href="canvas_test.html">Canvas Test</a></li>-->
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!--here is happening the magic!-->
+    <div id="jumbotron">
+        
+    </div>
+    
+    <!--Script Import (jquery, bootstrap, imageMapResizer, maphilight)-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/jq-promap.js"></script>
+    <script>
+        $(document.body).imgmap();
+    </script>
+
+</body>
+
+</html>
