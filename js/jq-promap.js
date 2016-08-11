@@ -44,24 +44,25 @@ $.fn.promap = function(){
         });
 
         //append the Tooltip-div to the body
-        $(document.body).append('<div id="imgmapTooltip" class="imgmapTooltip style="position:absolute; z-index:999;"></div>');
+        $(document.body).append('<div id="imgmapTooltip" class="imgmapTooltip"></div>');
 
         function applyEvents(id, content){
             $(id).mouseenter(function(){
                 $('#imgmapTooltip').show().html(content);
             }).mouseleave(function(){
                 $('#imgmapTooltip').hide();
-            }).mousemove(function(e){
+            }).mousemove(function(event){
                 $('#imgmapTooltip').css({
-                    left: e.pageX + 25,
-                    top: e.pageY
+                    left: event.pageX + 25,
+                    top: event.pageY,
+                    position: 'absolute'
                 });
             });
         }
 
         //Eventhandler onWindowResize
         $(window).resize(function(e){
-            mapdata.each(function(entry){
+            mapdata.forEach(function(entry){
 
                 /* DATA GATHERING ===========================
                  * Get data about 'real' width and height and store img and svg DOM.
@@ -134,5 +135,8 @@ $.fn.promap = function(){
                 });
             });
         }).trigger('resize');
+        setTimeout(function() {
+            $(window).trigger('resize');
+        }, 1000);
     });   
 }
