@@ -1,10 +1,9 @@
-$.fn.imgmap = function(){
-    //master data store
-    var mapdata = new Array();
-
+$.fn.promap = function(){
     //populate master data store after DOMs are loaded
     $(document).ready(function(){
-
+        //master data store
+        mapdata = new Array();
+        
         //get all images on page that use the 'usemap' attribute
         $('img[usemap]').each(function(index, value){
 
