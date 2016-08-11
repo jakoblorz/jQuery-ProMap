@@ -1,0 +1,33 @@
+polygon {
+  fill: transparent;
+  stroke: transparent;
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+polygon:hover{
+  fill: white;
+  fill-opacity: 0.1;
+  stroke: white;
+  stroke-opacity: 0.5;
+}
+
+svg:hover{
+  filter: drop-shadow( 0px 2px 3px #000 );
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.poly-action{
+  cursor: pointer;
+}
+
+.imgmapTooltip{
+  background-color: white;
+  padding: 5px;
+  border: 1px white;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

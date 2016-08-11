@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="4r77y">
+    <title>jQuery-ProMap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/promap.css" rel="stylesheet">
+</head>
+
+<!--Setting strings corectly-->
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-inner">
+                <a class="navbar-brand" href="#">jQuery-ProMap</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li class="active"><a href="index.html">Editor</a></li>
+                    <li><a href="sample.html">Sample</a></li>
+                    <li><a href="canvas_test.html">Canvas Test</a></li>-->
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!--here is happening the magic!-->
+    <div id="jumbotron">
+        <img id="nyc" src="img/skyline.jpg" usemap="#karte" style="width:90%;margin:5%;height:auto;" width="5559" height="3706">
+        <map name="karte">
+            <area shape="poly" coords="2381, 221, 2361, 647, 2344, 684, 2334, 803, 2328, 915, 2281, 1014, 2235, 1071, 2218, 1239, 2185, 1252, 2192, 1477, 2169, 1484, 2166, 2535, 2146, 2529, 2132, 2548, 2132, 2667, 2119, 2691, 2113, 2763, 2076, 2757, 2050, 2793, 2040, 2925, 2089, 2922, 2089, 3011, 2126, 3008, 2136, 3067, 2215, 3015, 2665, 3031, 2662, 3127, 2685, 3127, 2698, 3058, 2698, 2800, 2718, 2757, 2642, 2740, 2629, 2529, 2589, 2522, 2582, 1477, 2576, 1474, 2572, 1259, 2539, 1209, 2546, 1117, 2536, 1110, 2523, 1077, 2483, 1028, 2453, 962, 2427, 899, 2424, 823, 2424, 724, 2397, 647, 2390, 254" href="https://www.esbnyc.com" content="This is the Empire State Building">
+            <area shape="poly" coords="3125, 1090, 3115, 1249, 3095, 1269, 3068, 1282, 3058, 1573, 3082, 1583, 3098, 1768, 3144, 1702, 3174, 1695, 3181, 1656, 3168, 1282, 3141, 1256" href="https://oneworldobservatory.com/" content="This is the One World Trade Center">
+        </map>
+    </div>
+    
+    <!--Script Import (jquery, bootstrap, imageMapResizer, maphilight)-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/jq-promap.js"></script>
+    <script>
+        $(document.body).promap();
+    </script>
+
+</body>
+
+</html>
