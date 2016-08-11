@@ -14,7 +14,7 @@ Add an Image to your html file (the following attributes are required):
 ```
   <img id="" src="" usemap="#" width="" height="">
 ```
-> Notice: width and height are required for correct(responsive) scaling. These values should represent the real size of the Image
+> Notice: width and height are required for correct(responsive) scaling. These values should represent the real size of the Image. Modifying the size of the Image should be done by applying CSS to the Image (e.g. width:100%; height:auto;)
 
 Add a Map to your html file:
 ```
@@ -46,6 +46,23 @@ Finally, call jp-promap.js on the documentbody:
   <script>
     $(document.body).promap();
   </script
+```
+
+Your code should look slightly like this:
+```
+<body>
+  <img id="nicepic" src="img/nicepic.jpg" usemap="#highlights" width="1500" height="350">
+  <map name="highlights">
+    <area shape="poly" coords="12,45,56,34,67,78,45,34" href="http://www.facebook.com/theguy" content="This is his face">
+    <area shape="poly" coords="90,785,45,896,443,342,449,54" href="" content="Nothing to see here :D ">
+  </map
+  <script src="js/jquery.min.js"></script>
+  <script src="js/snap.svg-min.js"></script>
+  <script src="js/jq-promap.js"></script>
+  <script>
+    $(document.body).promap();
+  </script
+</body>
 ```
 
 Thank you for using me scripts :D
